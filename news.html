@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức | MT Consultancy</title>
+    <meta name="description" content="Cập nhật những tin tức pháp lý, quy định mới nhất về thị thực, xuất nhập cảnh và luật doanh nghiệp từ MT Consultancy.">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css?v=2">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-scale-balanced"></i> MT <span>Consultancy</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#home">Trang chủ</a></li>
+                <li><a href="index.html#services">Dịch vụ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+            
+            <div class="header-right">
+                <a href="tel:0900000000" class="btn btn-primary">
+                    <i class="fa-solid fa-phone me-2"></i> Tư Vấn Miễn Phí: 0900 000 000
+                </a>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1 class="page-title">Tin Tức Pháp Lý</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Trang chủ</a> / <span>Tin tức</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <!-- Categories -->
+            <div class="news-categories">
+                <button class="category-btn active" data-filter="all">Tất cả</button>
+                <button class="category-btn" data-filter="visa">Thị thực & Visa</button>
+                <button class="category-btn" data-filter="work-permit">Giấy phép lao động</button>
+                <button class="category-btn" data-filter="residence">Thẻ tạm trú</button>
+                <button class="category-btn" data-filter="other">Khác</button>
+            </div>
+
+            <div class="news-grid" id="news-grid">
+                <!-- News Item 1 -->
+                <div class="news-card" data-category="visa">
+                    <span class="category-badge">Thị thực & Visa</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 1" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">15 Tháng 5, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Quy định mới về cấp Visa điện tử (E-visa) cho người nước ngoài</a></h3>
+                        <p class="news-excerpt">Chính phủ vừa ban hành nghị quyết mới về việc mở rộng danh sách các quốc gia được cấp thị thực điện tử và nâng thời hạn lưu trú lên đến 90 ngày, có giá trị nhập cảnh nhiều lần.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News Item 2 -->
+                <div class="news-card" data-category="work-permit">
+                    <span class="category-badge">Giấy phép lao động</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 2" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">02 Tháng 5, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Hướng dẫn chi tiết thủ tục xin Giấy phép lao động năm 2026</a></h3>
+                        <p class="news-excerpt">Cập nhật toàn bộ hồ sơ, thủ tục và quy trình xin cấp mới, gia hạn Giấy phép lao động cho chuyên gia, nhà quản lý, lao động kỹ thuật người nước ngoài làm việc tại Việt Nam.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News Item 3 -->
+                <div class="news-card" data-category="residence">
+                    <span class="category-badge">Thẻ tạm trú</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 3" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">20 Tháng 4, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Thẻ Tạm Trú: Giải pháp lưu trú dài hạn an toàn cho Expat</a></h3>
+                        <p class="news-excerpt">Những lợi ích không thể bỏ qua của việc sở hữu Thẻ tạm trú tại Việt Nam. Điều kiện và thủ tục cấp thẻ tạm trú cho nhà đầu tư, người lao động nước ngoài và thân nhân.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News Item 4 -->
+                <div class="news-card" data-category="other">
+                    <span class="category-badge">Khác</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 4" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">10 Tháng 4, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Thủ tục xin cấp lại Hộ chiếu bị mất hoặc hư hỏng nhanh nhất</a></h3>
+                        <p class="news-excerpt">Bài viết hướng dẫn chi tiết các bước xử lý khi không may làm mất hoặc làm hỏng hộ chiếu. Từ việc trình báo công an đến hoàn thiện hồ sơ xin cấp lại tại Cục Quản lý Xuất nhập cảnh.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News Item 5 -->
+                <div class="news-card" data-category="other">
+                    <span class="category-badge">Khác</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 5" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">28 Tháng 3, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Lý lịch tư pháp số 1 và số 2 khác nhau như thế nào?</a></h3>
+                        <p class="news-excerpt">Phân biệt sự khác nhau giữa Phiếu lý lịch tư pháp số 1 và số 2. Trường hợp nào cần sử dụng loại số 1, trường hợp nào bắt buộc phải dùng loại số 2? Tìm hiểu ngay trong bài viết.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News Item 6 -->
+                <div class="news-card" data-category="other">
+                    <span class="category-badge">Khác</span>
+                    <img src="./assets/images/hero-banner.png" alt="Tin tức 6" class="news-img">
+                    <div class="news-content">
+                        <span class="news-date">15 Tháng 3, 2026</span>
+                        <h3 class="news-title"><a href="news-detail.html">Quy trình xin thôi Quốc tịch Việt Nam mới nhất hiện nay</a></h3>
+                        <p class="news-excerpt">Hướng dẫn đầy đủ về hồ sơ, trình tự, thủ tục xin thôi quốc tịch Việt Nam để nhập quốc tịch nước ngoài theo quy định của Luật Quốc tịch hiện hành.</p>
+                        <a href="news-detail.html" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Bạn Đang Gặp Vướng Mắc Về Pháp Lý?</h2>
+                <p class="cta-desc">Liên hệ ngay với các chuyên gia của chúng tôi để được tư vấn chính xác và nhanh chóng nhất.</p>
+                <div class="cta-buttons">
+                    <a href="https://zalo.me/0900000000" target="_blank" class="btn btn-zalo btn">
+                        <i class="fa-solid fa-comment-dots" style="margin-right: 8px;"></i> Liên Hệ Qua Zalo
+                    </a>
+                    <a href="tel:0900000000" class="btn btn-primary">
+                        <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Gọi Điện Thoại
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-scale-balanced"></i> MT <span>Consultancy</span>
+                    </a>
+                    <p class="footer-desc">Công ty TNHH Minh Thuật Consultancy cung cấp dịch vụ tư vấn pháp lý chuyên nghiệp, đồng hành cùng cá nhân và doanh nghiệp trong các thủ tục hành chính, thị thực và quốc tịch.</p>
+                    <div class="social-links" style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem;"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Thông Tin Liên Hệ</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Tầng 2, số 68 Nguyễn Huệ, phường Sài Gòn, TP. Hồ Chí Minh</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0900 000 000</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contact@mtconsultancy.vn</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Thứ 2 - Thứ 6: 08:00 - 17:30<br>Thứ 7: 08:00 - 12:00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Liên Kết Nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Trang chủ</a></li>
+                        <li><a href="index.html#services">Dịch vụ</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 MT Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://zalo.me/0900000000" target="_blank" class="float-btn float-zalo" title="Chat Zalo">
+            <i class="fa-solid fa-comment-dots"></i>
+        </a>
+        <a href="tel:0900000000" class="float-btn float-phone" title="Gọi Ngay">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js?v=2"></script>
+</body>
+</html>
